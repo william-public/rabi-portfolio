@@ -213,7 +213,7 @@ export function Navbar() {
                       ease: "easeInOut" 
                     }}
                   >
-                    <span className="nav-logo-text">TB</span>
+                    <span className="nav-logo-text">RK</span>
                     <motion.span 
                       className="absolute nav-logo-sparkle optimize-animation"
                       animate={{
@@ -252,7 +252,7 @@ export function Navbar() {
                   transition={{ delay: 0.2, duration: 0.5 }}
                   className="nav-brand-text optimize-animation"
                 >
-                    Tyler Berkson<span className="nav-brand-dot"></span>
+                    Rabi Khan<span className="nav-brand-dot"></span>
                 </motion.span>
               </div>
             </Link>

@@ -175,23 +175,23 @@ export function AboutSection() {
   const tabs = [
     { 
       icon: <Code className="h-5 w-5" />,
-      name: "Development",
-      content: "I design and build scalable, secure systems and APIs using Node.js, Python, PHP, and AWS. My focus is on performance, reliability, and long-term maintainability—delivering production-grade solutions that support fast-growing startups and enterprise-scale applications."
+      name: "Full Stack",
+      content: "With 6+ years of professional experience across Canadian retail, logistics, and e-commerce sectors, I’ve architected and delivered high-performance full-stack systems using React, Vue, .NET Core, and Node.js for both startups and global enterprises, consistently enabling seamless user experiences and supporting over $1M in annual transaction volume through resilient, cloud-hosted applications on Azure."
     },
     { 
       icon: <Globe className="h-5 w-5" />,
-      name: "Experience",
-      content: "With 7+ years of professional experience, I’ve delivered high-performance full-stack systems for startups and global enterprises. I specialize in designing scalable architectures, optimizing critical paths, and shipping reliable systems in production environments."
+      name: "DevOps",
+      content: "I engineer robust DevOps practices using Azure DevOps (YAML pipelines), GitHub Actions, Jenkins, and Ansible to automate CI/CD workflows, enforce secure deployment gates, integrate API contract testing with QA, and enable blue-green deployments—reducing release cycles by 40%, cutting post-deployment defects by 25%, and supporting self-service infrastructure for engineering teams across multi-client environments."
     },
     { 
       icon: <Database className="h-5 w-5" />,
-      name: "Skills",
-      content: "My expertise spans Node.js, Python, PHP, AWS, and API design, along with database optimization, distributed systems, and cloud-native architectures. I build systems that are scalable, observable, and ready for real-world production demands."
+      name: "Cloud",
+      content: "I design and deploy secure, scalable cloud architectures on Microsoft Azure (AZ-104 Certified) and AWS, leveraging Bicep, Terraform, and ARM templates for infrastructure-as-code; AKS, Docker, Helm, and ACR/ECR for container orchestration; Azure App Services, Functions, VMs, and AWS EC2/Lambda for compute; and VNet, NSGs, Azure Firewall, Palo Alto Firewalls, RBAC, Azure AD, and Key Vault for networking and zero-trust security—consistently hardening environments, preventing outages, and saving $15K+ annually in cloud spend."
     },
     { 
       icon: <Puzzle className="h-5 w-5" />,
-      name: "Process",
-      content: "I approach projects with an architecture-first mindset, balancing performance, reliability, and business needs. I value clear communication, iterative delivery, and continuous improvement—building systems that evolve smoothly as products and teams scale."
+      name: "Automation",
+      content: "I implement intelligent automation across the software lifecycle—from CI/CD workflows with GitHub Actions and contract testing to AI-enhanced monitoring with Azure Log Analytics and LangChain-powered runbooks—that dramatically reduces manual toil, prevents outages before they impact users, and accelerates delivery velocity in fast-paced, multi-project environments."
     }
   ]
 
@@ -437,7 +437,7 @@ export function AboutSection() {
                   ]
                 }}
                 transition={{ duration: 3, repeat: Infinity }}
-              >Software Engineer</motion.span>
+              >Full Stack Engineer</motion.span>
               <motion.span 
                 className="absolute -bottom-1.5 left-0 right-0 h-3 bg-primary/20 rounded-full -z-10"
                 initial={{ width: 0 }}
@@ -451,7 +451,7 @@ export function AboutSection() {
                 } : { width: 0 }}
               ></motion.span>
             </motion.span> specializing
-            <br /> in scalable distributed systems
+            <br /> in DevOps Cloud Architecture
           </motion.h2>
           
           <motion.p 
@@ -467,7 +467,8 @@ export function AboutSection() {
               }
             } : { opacity: 0, y: 20 }}
           >
-            Leveraging deep expertise in Node.js, Python, PHP, and AWS, you will design and lead the development of impactful backend platforms and APIs, delivering secure, resilient, and high-performance systems at scale.
+            Expertise in JavaScript, TypeScript, React, Vue, C#, and .NET Core, combined with deep cloud infrastructure automation using Azure (AZ-104 Certified), AWS, and GCP.
+
           </motion.p>
         </motion.div>
 

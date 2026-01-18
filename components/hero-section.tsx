@@ -248,7 +248,7 @@ export function HeroSection() {
                       <div className="absolute inset-0 bg-primary/1 dark:bg-transparent rounded-full"></div>
                       
                       <motion.img
-                        src="/Profile-Display-removebg.png"
+                        src="/profilepic.png"
                         alt="Tyler's Profile"
                         className="absolute inset-0 w-full h-full object-contain scale-[0.9] object-center z-40 transition-all duration-700 ease-out filter drop-shadow-[0_10px_20px_rgba(var(--primary),0.2)]"
                         style={{ 
@@ -366,7 +366,7 @@ export function HeroSection() {
                             willChange: 'color',
                             backfaceVisibility: 'hidden'
                           }}
-                        >Tyler Berkson</motion.span>.
+                        >Rabi Khan</motion.span>.
                 <motion.span 
                   className="block mt-2 text-gradient"
                   style={{
@@ -379,8 +379,8 @@ export function HeroSection() {
                     willChange: 'background-size',
                     backfaceVisibility: 'hidden'
                   }}
-                >Senior Software Engineer</motion.span>
-                <span className="block mt-2">focus on AI</span>
+                >FullStack DevOps Engineer</motion.span>
+                <span className="block mt-2">Cloud (Azure/AWS/GCP)</span>
               </motion.h1>
               
               <div className="h-14 flex items-center justify-center lg:justify-start">
@@ -397,8 +397,7 @@ export function HeroSection() {
                   backfaceVisibility: 'hidden'
                 }}
               >
-                As a senior full-stack developer with over 8+ years of experience, I've built scalable, high-performance web applications and APIs using Python, JavaScript, Flutter, and modern front-end frameworks. 
-                I have extensive experience designing responsive interfaces, back-end systems, AI-powered features, and automation solutions, and have worked across various organizations to improve user experiences and business outcomes.
+                Full-Stack Developer & DevOps Engineer with 6+ years of experience building and automating secure, high-performance web applications for Canadian retail, logistics, and electronics sectors. Expertise in JavaScript, TypeScript, React, Vue, C#, and .NET Core, combined with deep cloud infrastructure automation using Azure (AZ-104 Certified), AWS, and GCP. CI/CD (GitHub Actions, Azure DevOps), IaC (Bicep, Terraform), and containerization (Docker, AKS).
               </motion.p> 
               
               <motion.div 

@@ -14,14 +14,14 @@ export function ContactSection() {
     {
       icon: <Mail className="h-6 w-6" />,
       title: "Email",
-      value: "wayitwent987@gmail.com",
-      link: "mailto:wayitwent987@gmail.com",
+      value: "muhammedrabikhan@gmail.com",
+      link: "mailto:muhammedrabikhan@gmail.com",
     },
     {
       icon: <Phone className="h-6 w-6" />,
       title: "Phone",
-      value: "+1 (604) 862-5671",
-      link: "tel:+18439091420",
+      value: "+1 (647) 917-7225",
+      link: "tel:+16479177225",
     },
     {
       icon: <MapPin className="h-6 w-6" />,
@@ -40,7 +40,7 @@ export function ContactSection() {
 
     {
       name: "Email",
-      url: "wayitwent987@gmail.com",
+      url: "muhammedrabikhan@gmail.com",
       icon: <Mail className="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6" />,
     },
   ]

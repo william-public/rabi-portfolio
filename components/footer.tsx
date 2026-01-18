@@ -54,7 +54,7 @@ export function Footer() {
 
         <div className="mt-6 sm:mt-8 pt-6 sm:pt-8 border-t border-border text-center">
           <p className="text-xs sm:text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Tyler Berkson. All rights reserved.
+            © {new Date().getFullYear()} Rabi Khan. All rights reserved.
           </p>
         </div>
       </div>
