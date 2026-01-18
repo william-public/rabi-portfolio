@@ -26,7 +26,7 @@ export function ContactSection() {
     {
       icon: <MapPin className="h-6 w-6" />,
       title: "Location",
-      value: "BC, Canada",
+      value: "Milton, Canada",
       link: "https://maps.google.com/?q=BC,Canada",
     },
   ]
@@ -34,7 +34,7 @@ export function ContactSection() {
   const socials = [
     {
       name: "LinkedIn",
-      url: "www.linkedin.com/in/tyler-berkson-6586b2294",
+      url: "www.linkedin.com/in/rabi-khan-5668b5351",
       icon: <Linkedin className="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6" />,
     },
 

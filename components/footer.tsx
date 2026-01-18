@@ -18,10 +18,10 @@ export function Footer() {
           <div className="flex items-center gap-2 mb-4 md:mb-0">
             <div className="relative w-7 h-7 sm:w-8 sm:h-8 flex items-center justify-center">
               <div className="absolute inset-0 bg-primary rounded-lg rotate-45 opacity-80"></div>
-              <span className="relative text-white font-bold text-base sm:text-lg">TB</span>
+              <span className="relative text-white font-bold text-base sm:text-lg">RB</span>
             </div>
             <span className="font-poppins font-bold text-base sm:text-lg">
-              Tyler<span className="text-primary">.</span> 
+              Rabi<span className="text-primary"></span> 
             </span>
           </div>
 

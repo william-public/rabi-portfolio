@@ -249,7 +249,7 @@ export function HeroSection() {
                       
                       <motion.img
                         src="/profilepic.png"
-                        alt="Tyler's Profile"
+                        alt="Rabi's Profile"
                         className="absolute inset-0 w-full h-full object-contain scale-[0.9] object-center z-40 transition-all duration-700 ease-out filter drop-shadow-[0_10px_20px_rgba(var(--primary),0.2)]"
                         style={{ 
                           mixBlendMode: 'normal',

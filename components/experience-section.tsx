@@ -36,7 +36,7 @@ const experiences = [
     type: "work",
     title: "Web Developer",
     company: "Tecnet Canada Inc.",
-    location: "BC, Canada",
+    location: "Milton, Canada",
     period: "Feb 2014 – Oct 2015",
     description:
       "Contributed to rebuilding internal logistics platforms by developing React-based UI components, improving performance, supporting API integrations, implementing real-time tracking and notifications, and enhancing overall usability across workflows."
@@ -45,7 +45,7 @@ const experiences = [
     type: "education",
     title: "Bachelor of Computer Science",
     company: "Douglas College",
-    location: "BC, Canada",
+    location: "Milton, Canada",
     period: "Sep 2013 – Jun 2015",
     description:
       "Completed a 2-year IT program with hands-on experience in web development, programming, databases, and system analysis, building real projects and strengthening technical skills."
