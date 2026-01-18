@@ -7,48 +7,57 @@ import { Briefcase, Calendar, GraduationCap, MapPin } from "lucide-react"
 const experiences = [
   {
     type: "work",
-    title: "Expert Full Stack Developer",
-    company: "Better Business Bureau",
-    location: "United States",
-    period: "Mar 2018 – May 2022",
+    title: "Senior Full-Stack Developer & Cloud Engineer",
+    company: "Magic Computers",
+    location: "Mississauga, ON",
+    period: "Jul 2023 – Aug 2025",
     description:
-      "Architected and delivered scalable, high-performance web applications with Node.js, Python, modern databases, and frontend frameworks (React, Vue, Angular). Optimized workflows, integrated secure APIs, implemented testing and CI/CD pipelines, and led cross-functional teams to modernize legacy applications, improving performance, maintainability, and UX."
+      "Developed and managed 7+ Azure DevOps YAML pipelines for .NET and Node.js applications, reducing infrastructure provisioning time by 35% and eliminating 12+ high-risk misconfigurations through RBAC and NSG hardening.Automated SQL Server maintenance with PowerShell, cutting manual DBA effort by 8 hours/week and improving query response times by 60%. Monitored system health using Azure Monitor and Log Analytics, reducing incident detection from 45 to under 10 minutes and preventing 3 potential outages during peak operations."
   },
   {
     type: "work",
-    title: "Professional Backend Developer",
-    company: "Alliance Truss",
-    location: "United States",
-    period: "Aug 2016 – Nov 2017",
+    title: "Full-Stack DevOps Engineer (Azure & Multi-Cloud)",
+    company: "BT Mobility",
+    location: "Milton, ON",
+    period: "May 2022 – Jul 2024",
     description:
-      "Built reliable backend systems, optimized workflows and data processes, implemented caching strategies and database optimizations to reduce response times, and maintained clean, well-documented environments to improve system stability and team productivity."
+      "Engineered a customer portal and shipping dashboard using React, .NET Core, and Azure SQL, processing 3K+ monthly orders and cutting manual shipping errors by 40%. Designed real-time WebSocket APIs in C# and Node.js for live dispatch tracking, reducing customer support inquiries by 25%. Optimized Azure SQL and MongoDB performance through indexing and Redis caching, accelerating API responses from 1.8s to 0.3s. Modernized frontend UX with responsive components and lazy loading, increasing mobile engagement by 30%."
   },
   {
     type: "work",
-    title: "Professional Front-End Developer",
-    company: "Core IT",
-    location: "United States",
-    period: "Dec 2015 – Sep 2016",
+    title: "Full-Stack Application Developer – E-Commerce & Internal Tools",
+    company: "Tik Tech Electronics",
+    location: "Milton, ON",
+    period: "Nov 2022 – Jan 2024",
     description:
-      "Developed scalable UI components using React, Vue, and Angular, optimized page layouts and user flows with Tailwind and Bootstrap, monitored front-end performance, and delivered clean, maintainable features including dynamic dashboards and interactive visualizations."
+      "Deployed 12+ microservices on AKS and Azure App Services using Bicep, cutting environment setup from 3 days to 2 hours and enabling self-service deployments for 8 engineering teams. Delivered an e-commerce platform using Vue/Nuxt and .NET, supporting 5K+ daily product views with sub-500ms page loads and seamless checkout. Automated CI/CD across Azure DevOps and GitHub Actions, accelerating release cycles by 40% and reducing post-deployment defects by 25% through integrated API contract testing. Built .NET/Node.js backend APIs handling 5K+ daily transactions, achieving <200ms p95 latency with Redis caching and blocking 100% of unauthorized access via OAuth2/JWT."
   },
   {
     type: "work",
-    title: "Web Developer",
-    company: "Tecnet Canada Inc.",
-    location: "Milton, Canada",
-    period: "Feb 2014 – Oct 2015",
+    title: "Frontend & Backend Systems Developer – Retail Operations",
+    company: "Northfield Retail Solutions / Calvin Klein",
+    location: "Halton Hills, ON",
+    period: "Jan 2020 – May 2022",
     description:
-      "Contributed to rebuilding internal logistics platforms by developing React-based UI components, improving performance, supporting API integrations, implementing real-time tracking and notifications, and enhancing overall usability across workflows."
+      "Engineered a C#/SQL order and inventory system processing 500+ daily orders, syncing sales and warehouse data in under 2 minutes — a 95% improvement over the legacy 4-hour batch process. Integrated 5 third-party dropshipping APIs, cutting average fulfillment time by 35% (5 → 3.2 days) and raising on-time delivery to 92%. Upgraded on-prem SQL Server and Windows infrastructure, reducing unplanned downtime by 50% without new hardware investment."
   },
   {
     type: "education",
-    title: "Bachelor of Computer Science",
-    company: "Douglas College",
-    location: "Milton, Canada",
-    period: "Sep 2013 – Jun 2015",
+    title: "Master of Computer Information Systems",
+    company: "Cloud and Distributed Computing Lab of UTM",
+    location: "Mississauga, ON",
+    period: "May 2017 – Feb 2020",
     description:
-      "Completed a 2-year IT program with hands-on experience in web development, programming, databases, and system analysis, building real projects and strengthening technical skills."
+      ""
+  },
+  {
+    type: "education",
+    title: "Bachelor of Architecture - BArch, Computer Engineering",
+    company: "University of Toronto Mississauga",
+    location: "Mississauga, ON",
+    period: "Aug 2015 – Apr 2017",
+    description:
+      ""
   }
 ];
 
@@ -87,7 +96,7 @@ export function ExperienceSection() {
           {/* Vertical timeline line - adjusted for mobile */}
           <div className="absolute left-[20px] md:left-1/2 top-0 h-full md:-translate-x-1/2 w-1 bg-gradient-to-b from-primary/30 via-primary/60 to-blue-400/30 rounded-full z-0" />
 
-          <div className="flex flex-col gap-8 sm:gap-12 md:gap-16 w-full max-w-3xl mx-auto z-10">
+          <div className="flex flex-col gap-8 sm:gap-12 md:gap-16 w-full max-w-6xl mx-auto z-10">
             {experiences.map((exp, idx) => {
               const isWork = exp.type === "work"
               const Icon = isWork ? Briefcase : GraduationCap
