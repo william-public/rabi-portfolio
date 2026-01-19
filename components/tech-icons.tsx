@@ -41,13 +41,13 @@ const techIcons = [
     position: { top: 0, left: "80%" },
     delay: 0.4,
   },
-  {
-    name: "XD",
-    icon: "/tech/xd.svg",
-    color: "#FF61F6",
-    position: { top: "20%", left: "25%" },
-    delay: 0.5,
-  },
+  // {
+  //   name: "XD",
+  //   icon: "/tech/xd.svg",
+  //   color: "#FF61F6",
+  //   position: { top: "20%", left: "25%" },
+  //   delay: 0.5,
+  // },
   {
     name: "Next.js",
     icon: "/tech/nextjs.svg",
@@ -55,34 +55,34 @@ const techIcons = [
     position: { top: "20%", left: "45%" },
     delay: 0.6,
   },
-  {
-    name: "GraphQL",
-    icon: "/tech/graphql.svg",
-    color: "#E535AB",
-    position: { top: "20%", left: "65%" },
-    delay: 0.7,
-  },
-  {
-    name: "Illustrator",
-    icon: "/tech/illustrator.svg",
-    color: "#FF9A00",
-    position: { top: "30%", left: "35%" },
-    delay: 0.8,
-  },
-  {
-    name: "Figma",
-    icon: "/tech/figma.svg",
-    color: "#F24E1E",
-    position: { top: "30%", left: "55%" },
-    delay: 0.9,
-  },
-  {
-    name: "Framer",
-    icon: "/tech/framer.svg",
-    color: "#0055FF",
-    position: { top: "30%", left: "75%" },
-    delay: 1.0,
-  },
+  // {
+  //   name: "GraphQL",
+  //   icon: "/tech/graphql.svg",
+  //   color: "#E535AB",
+  //   position: { top: "20%", left: "65%" },
+  //   delay: 0.7,
+  // },
+  // {
+  //   name: "Illustrator",
+  //   icon: "/tech/illustrator.svg",
+  //   color: "#FF9A00",
+  //   position: { top: "30%", left: "35%" },
+  //   delay: 0.8,
+  // },
+  // {
+  //   name: "Figma",
+  //   icon: "/tech/figma.svg",
+  //   color: "#F24E1E",
+  //   position: { top: "30%", left: "55%" },
+  //   delay: 0.9,
+  // },
+  // {
+  //   name: "Framer",
+  //   icon: "/tech/framer.svg",
+  //   color: "#0055FF",
+  //   position: { top: "30%", left: "75%" },
+  //   delay: 1.0,
+  // },
 ]
 
 export function TechIcons() {
