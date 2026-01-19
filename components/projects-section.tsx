@@ -25,7 +25,7 @@ const projects = [
     category: "FULLSTACK",
     technologies: ["React", ".NET Core", "Node.js", "PostgreSQL", "SQL Server", "Stripe", "JWT", "Azure"],
     demoUrl: "https://ecommerce-web-five-sepia.vercel.app/",
-    gitUrl: "https://github.com/hesbonangwenyi606/Ecommerce-web",
+    codeUrl: "https://github.com/RMK800/Ecommerce-web",
     featured: true,
   },
   {
@@ -36,7 +36,7 @@ const projects = [
     category: "DEVOPS",
     technologies: ["Azure DevOps", "GitHub Actions", "Becep", "Docker", "AKS", "Jest", "Cypress", "RBAC", "PowerShell"],
     demoUrl: "https://pympay-adi.netlify.app/  ",
-    gitUrl: "https://github.com/AdityaSeth777/PymPay",
+    codeUrl: "https://github.com/RMK800/PymPay",
     featured: false,
   },
   {
@@ -47,7 +47,7 @@ const projects = [
     category: "cloud",
     technologies: ["AWS", "Terraform", "CloudFormation", "Docker", "Kubernetes", "CI/CD Integration"],
     demoUrl: "https://cloud-scale-aws.vercel.app/  ",
-    gitUrl: "https://github.com/hesbonangwenyi606/cloud-scale-aws",
+    codeUrl: "https://github.com/RMK800/cloud-scale-aws",
     featured: false,
   },
   {
@@ -58,7 +58,7 @@ const projects = [
     category: "automation",
     technologies: ["React", "TypeScript", "Node.js", "Express", "Kubernetes", "AWS CLI", "REST APIs", "Prettier", "Netlify"],
     demoUrl: "https://deploy-cloud-tools.vercel.app/",
-    gitUrl: "https://github.com/hesbonangwenyi606/deploy-cloud-tools",
+    codeUrl: "https://github.com/RMK800/deploy-cloud-tools",
     featured: false,
   }
 ]
@@ -210,6 +210,7 @@ export function ProjectsSection() {
               sizes="(max-width: 768px) 100vw, 340px"
               priority={index === 0}
               style={{
+                objectFit: "fill",
                 zIndex: 20,
                 transition: "transform 0.5s cubic-bezier(.4,2,.3,1)",
               }}
@@ -432,7 +433,7 @@ export function ProjectsSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.4 }}
           >
-            Explore my latest work across web development, mobile apps, and UI/UX design.<br className="hidden sm:block" />
+            Explore my latest work across Full Stack, DevOps Automation and Cloud Infrastructure.<br className="hidden sm:block" />
             Each project represents a unique challenge and solution.
           </motion.p>
           {/* Search and filter controls */}
