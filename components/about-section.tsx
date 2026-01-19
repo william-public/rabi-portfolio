@@ -4,7 +4,7 @@ import { useRef, useState, useEffect, useCallback, useMemo } from "react"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { motion, useInView, useAnimation, AnimatePresence, useMotionValue } from "framer-motion"
-import { Download, Code, Globe, Database, Puzzle, Sparkles, ArrowRight } from "lucide-react"
+import { Download, Code, Globe, Database, Puzzle, Sparkles, ArrowRight, Cloud, WashingMachine, Workflow } from "lucide-react"
 import { MouseScrollIndicator } from "@/components/ui/mouse-scroll-indicator"
 import { ClientOnly } from "./client-only"
 
@@ -184,12 +184,12 @@ export function AboutSection() {
       content: "I engineer robust DevOps practices using Azure DevOps (YAML pipelines), GitHub Actions, Jenkins, and Ansible to automate CI/CD workflows, enforce secure deployment gates, integrate API contract testing with QA, and enable blue-green deployments—reducing release cycles by 40%, cutting post-deployment defects by 25%, and supporting self-service infrastructure for engineering teams across multi-client environments."
     },
     { 
-      icon: <Database className="h-5 w-5" />,
+      icon: <Cloud className="h-5 w-5" />,
       name: "Cloud",
       content: "I design and deploy secure, scalable cloud architectures on Microsoft Azure (AZ-104 Certified) and AWS, leveraging Bicep, Terraform, and ARM templates for infrastructure-as-code; AKS, Docker, Helm, and ACR/ECR for container orchestration; Azure App Services, Functions, VMs, and AWS EC2/Lambda for compute; and VNet, NSGs, Azure Firewall, Palo Alto Firewalls, RBAC, Azure AD, and Key Vault for networking and zero-trust security—consistently hardening environments, preventing outages, and saving $15K+ annually in cloud spend."
     },
     { 
-      icon: <Puzzle className="h-5 w-5" />,
+      icon: <Workflow className="h-5 w-5" />,
       name: "Automation",
       content: "I implement intelligent automation across the software lifecycle—from CI/CD workflows with GitHub Actions and contract testing to AI-enhanced monitoring with Azure Log Analytics and LangChain-powered runbooks—that dramatically reduces manual toil, prevents outages before they impact users, and accelerates delivery velocity in fast-paced, multi-project environments."
     }
@@ -202,18 +202,7 @@ export function AboutSection() {
       iconBg: "bg-primary/20",
       iconColor: "text-primary",
       skills: [
-        "React (Hooks, Concurrent, Suspense)",
-        "Next.js (App Router, SSR/ISR, Edge)",
-        "Angular",
-        "Nuxt.js",
-        "TypeScript (Advanced Typing)",
-        "Tailwind CSS",
-        "CSS-in-JS",
-        "State Management (Redux, Zustand, TanStack)",
-        "Performance Optimization",
-        "Accessibility (WCAG, ARIA)",
-        "Frontend Architecture",
-        "Testing (Jest, React Testing Library, Playwright)"
+        "React", "TypeScript", "Node.js", "Express", "PostgreSQL", "Stripe API", "JWT", "OAuth2", "REST/GraphQL", "Responsive Design", "Vercel", "AWS EC2", "GitHub Actions", "Jest/Cypress"
       ],
       barColor: "from-primary to-blue-600"
     },
@@ -223,39 +212,30 @@ export function AboutSection() {
       iconBg: "bg-blue-500/20",
       iconColor: "text-blue-500",
       skills: [
-        "Node.js (NestJS, Express)",
-        "Python (FastAPI, Django)",
-        "PHP (Laravel)",
-        "REST & GraphQL APIs",
-        "Microservices Architecture",
-        "AWS (EC2, Lambda, RDS, S3)",
-        "Databases (PostgreSQL, MySQL, MongoDB)",
-        "Caching (Redis)",
-        "Authentication & Authorization (OAuth, JWT)",
-        "System Design & Scalability",
-        "CI/CD Pipelines",
-        "Monitoring & Logging"
+        "GitHub Actions", "Azure DevOps (YAML)", "Jenkins", "Docker", "Kubernetes (AKS/EKS)", "Bicep", "Terraform", "Jest", "Cypress", "API Contract Testing", "Secure CI/CD", "RBAC", "PowerShell", "Bash"
       ],
       barColor: "from-blue-500 to-cyan-600"
     },
     {
-      title: "Experience",
-      icon: <Globe className="h-6 w-6" />,
-      iconBg: "bg-amber-500/20",
-      iconColor: "text-amber-500",
-      years: "8+",
-      description: "Years of professional development",
-      barColor: "from-amber-500 to-orange-600"
+      title: "Cloud",
+      icon: <Cloud className="h-6 w-6" />,
+      iconBg: "bg-primary/20",
+      iconColor: "text-primary",
+      skills: [
+        "AWS (EC2, Lambda, ALB, Auto Scaling, S3, IAM)", "Terraform", "CloudFormation", "Docker", "Kubernetes", "Prometheus/Grafana", "VPC", "Route 53", "IAM Roles", "CloudWatch", "CI/CD Integration"
+      ],
+      barColor: "from-primary to-blue-600"
     },
     {
-      title: "Projects",
-      icon: <Puzzle className="h-6 w-6" />,
-      iconBg: "bg-green-500/20",
-      iconColor: "text-green-500",
-      projects: "103+",
-      description: "Projects delivered successfully",
-      barColor: "from-green-500 to-emerald-600"
-    }
+      title: "Automation",
+      icon: <Workflow className="h-6 w-6" />,
+      iconBg: "bg-blue-500/20",
+      iconColor: "text-blue-500",
+      skills: [
+        "React", "TypeScript", "Vite", "Node.js", "Express", "MongoDB", "Terraform", "Docker", "Kubernetes", "AWS CLI", "REST APIs", "ESLint/Prettier", "Netlify", "Render", "Environment Management", "HMR"
+      ],
+      barColor: "from-blue-500 to-cyan-600"
+    },
   ]
 
   const svgIllustrations = [

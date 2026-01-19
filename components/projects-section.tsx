@@ -189,7 +189,6 @@ export function ProjectsSection() {
             animate={{ opacity: [0.5, 0.8, 0.5], scale: [1, 1.04, 1] }}
             transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
           />
-
           {/* Image container with overflow-hidden and max-w */}
           <motion.div
             className="relative w-48 h-32 sm:w-60 sm:h-40 md:w-72 md:h-48 rounded-2xl shadow-xl border-4 border-white/40 dark:border-background/40 overflow-hidden z-20 bg-background"
