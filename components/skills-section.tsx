@@ -65,15 +65,6 @@ const skills: Skill[] = [
     category: "frontend" 
   },
   { 
-    id: "Flutter", 
-    name: "Flutter", 
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-plain.svg", 
-    level: 88, 
-    color: "#21759B", 
-    lightModeColor: "#165C77", // Darker blue for light mode
-    category: "frontend" 
-  },
-  { 
     id: "Nuxt", 
     name: "Nuxt", 
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxtjs/nuxtjs-original.svg", 
@@ -140,7 +131,65 @@ const skills: Skill[] = [
     color: "#F7DF1E", 
     lightModeColor: "#C7A800", // Darker yellow for light mode
     category: "frontend" 
-  }
+  },
+
+  // devops
+  {
+    id: "docker",
+    name: "Docker",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+    level: 80,
+    color: "#2496ED",
+    lightModeColor: "#0D6EAB", // Darker blue for light mode
+    category: "other"
+  },
+  {
+    id: "kubernetes",
+    name: "Kubernetes",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg",
+    level: 75,
+    color: "#326CE5",
+    lightModeColor: "#1E4A9C", // Darker blue for light mode
+    category: "other"
+  },
+  {
+    id: "Azure",
+    name: "Azure",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg",
+    level: 75,
+    color: "#326CE5",
+    lightModeColor: "#1E4A9C", // Darker blue for light mode
+    category: "other"
+  },
+  {
+    id: "AWS",
+    name: "AWS",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
+    level: 75,
+    color: "#326CE5",
+    lightModeColor: "#1E4A9C", // Darker blue for light mode
+    category: "other"
+  },
+  {
+    id: "GCP",
+    name: "GCP",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg",
+    level: 75,
+    color: "#326CE5",
+    lightModeColor: "#1E4A9C", // Darker blue for light mode
+    category: "other"
+  },
+  {
+    id: "CI/CD",
+    name: "CI/CD",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/circleci/circleci-plain.svg",
+    level: 75,
+    color: "#326CE5",
+    lightModeColor: "#1E4A9C", // Darker blue for light mode
+    category: "other"
+  },
+
+
 ]
 
 export function SkillsSection() {
