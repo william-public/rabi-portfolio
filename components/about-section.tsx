@@ -570,8 +570,24 @@ export function AboutSection() {
                           </div>
                           <h3 className="text-base font-semibold text-foreground dark:text-slate-100">{quadrant.title}</h3>
                         </div>
-                        
-                        {quadrant.skills ? (
+                        <div className="flex flex-wrap gap-1.5 mt-auto skills-wrap">
+                            {quadrant.skills.map((skill) => (
+                              <motion.span 
+                                key={skill} 
+                                className="px-2 py-1 text-xs font-medium rounded-full bg-white/10 dark:bg-slate-700/40 backdrop-blur-sm border border-white/5 dark:border-slate-600/30 transition-all duration-200 light:bg-gradient-to-r light:from-cyan-50/70 light:to-sky-50/70 light:text-slate-700 light:border-cyan-200/60 light:hover:from-cyan-100/80 light:hover:to-sky-100/80 light:shadow-[0_0_0_1px_rgba(14,165,233,0.25),0_2px_6px_-1px_rgba(14,165,233,0.25)]"
+                                whileHover={{ 
+                                  scale: 1.05, 
+                                  backgroundColor: "rgba(14, 165, 233, 0.15)",
+                                  color: "hsl(199, 89%, 48%)",
+                                  borderColor: "rgba(14, 165, 233, 0.3)",
+                                  transition: { duration: 0.3, ease: "easeOut" }
+                                }}
+                              >
+                                {skill}
+                              </motion.span>
+                            ))}
+                          </div>
+                        {/* {quadrant.skills ? (
                           <div className="flex flex-wrap gap-1.5 mt-auto skills-wrap">
                             {quadrant.skills.map((skill) => (
                               <motion.span 
@@ -594,7 +610,7 @@ export function AboutSection() {
                             <div className="text-2xl font-bold text-foreground dark:text-slate-100">{quadrant.years || quadrant.projects}</div>
                             <div className="text-xs text-muted-foreground dark:text-slate-400">{quadrant.description}</div>
                           </div>
-                        )}
+                        )} */}
                       </div>
                       
                       <motion.div 
