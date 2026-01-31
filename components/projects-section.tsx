@@ -57,7 +57,7 @@ const projects = [
     image: "/projects/automation.jpg",
     category: "automation",
     technologies: ["React", "TypeScript", "Node.js", "Express", "Kubernetes", "AWS CLI", "REST APIs", "Prettier", "Netlify"],
-    demoUrl: "https://deploy-cloud-tools.vercel.app/",
+    demoUrl: "https://deploy-cloud-tools.netlify.app/",
     codeUrl: "https://github.com/RMK800/deploy-cloud-tools",
     featured: false,
   }
