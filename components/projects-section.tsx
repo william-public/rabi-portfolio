@@ -19,17 +19,38 @@ import {
 const projects = [
   {
     id: 1,
-    title: "LuxeStore - Full Stack",
-    description: "Built a full-stack e-commerce system with real-time inventory, secure Stripe payments, and an admin dashboard—supporting 5K+ daily views and $500K+ in seasonal sales. Optimized SQL queries and frontend performance to cut load times from 90s to under 8s.",
-    image: "/projects/ecom.jpg",
+    title: "Calvin Klein Canada - Frontend & DevOps Modernization",
+    description: "Modernized legacy frontend components and implemented CI/CD automation for high-traffic e-commerce operations. Managed AWS infrastructure (EC2, S3, CloudFront) and enforced PCI-compliant security controls.",
+    image: "/projects/calvinklein.png",
     category: "FULLSTACK",
-    technologies: ["React", ".NET Core", "Node.js", "PostgreSQL", "SQL Server", "Stripe", "JWT", "Azure"],
-    demoUrl: "https://ecommerce-web-five-sepia.vercel.app/",
-    codeUrl: "https://github.com/RMK800/Ecommerce-web",
+    technologies: ["React", "TypeScript", "AWS (EC2, S3, CloudFront)", "GitHub Actions", "Stripe", "JWT"],
+    demoUrl: "https://www.calvinklein.ca/en",
     featured: true,
   },
   {
     id: 2,
+    title: "Food Ordering Platform – Full-Stack MVP",
+    description: "Built a responsive food ordering app from scratch with real-time menu, cart, and Stripe checkout. Optimized for mobile performance and deployed via Vercel + Render.",
+    image: "/projects/foodorder.png",
+    category: "FULLSTACK",
+    technologies: ["React", "TypeScript", "Vite", "Tailwind CSS", "Node.js", "Express", "Stripe", "MongoDB", "Vercel"],
+    demoUrl: "https://food-order-phi-six.vercel.app/",
+    codeUrl: "https://github.com/RMK800/food-order",
+    featured: true,
+  },
+  // {
+  //   id: 1,
+  //   title: "LuxeStore - Full Stack",
+  //   description: "Built a full-stack e-commerce system with real-time inventory, secure Stripe payments, and an admin dashboard—supporting 5K+ daily views and $500K+ in seasonal sales. Optimized SQL queries and frontend performance to cut load times from 90s to under 8s.",
+  //   image: "/projects/ecom.jpg",
+  //   category: "FULLSTACK",
+  //   technologies: ["React", ".NET Core", "Node.js", "PostgreSQL", "SQL Server", "Stripe", "JWT", "Azure"],
+  //   demoUrl: "https://ecommerce-web-five-sepia.vercel.app/",
+  //   codeUrl: "https://github.com/RMK800/Ecommerce-web",
+  //   featured: true,
+  // },
+  {
+    id: 3,
     title: "PYMPAY - DevOps CI/CD Automation",
     description: "Implemented secure CI/CD pipelines using Azure DevOps and GitHub Actions, reducing deployment time by 40% and post-release defects by 25%. Enabled self-service deployments for engineering teams across 12+ microservices.",
     image: "/projects/devops.jpg",
@@ -40,7 +61,7 @@ const projects = [
     featured: false,
   },
   {
-    id: 3,
+    id: 4,
     title: "Multi-Region AWS Infrastructure - Cloud",
     description: "Developed a cloud operations dashboard that models AWS-like infrastructure—including regions, load balancers, and auto-scaling—through a responsive UI. Designed to demonstrate scalable cloud architecture principles.",
     image: "/projects/cloud.jpg",
@@ -51,7 +72,7 @@ const projects = [
     featured: false,
   },
   {
-    id: 4,
+    id: 5,
     title: "CI/CD pipeline automation",
     description: "Created a full-stack utility that lets developers provision and manage cloud environments via a web interface. Automates setup using modern tooling to reduce manual errors and accelerate onboarding.",
     image: "/projects/automation.jpg",
@@ -117,12 +138,12 @@ export function ProjectsSection() {
                            project.technologies.some(tech => tech.toLowerCase().includes(searchTerm.toLowerCase()))
       return matchesCategory && matchesSearch
     })
-    .sort((a, b) => {
-      if (sortBy === "newest") return b.id - a.id
-      if (sortBy === "oldest") return a.id - b.id
-      if (sortBy === "featured") return (b.featured ? 1 : 0) - (a.featured ? 1 : 0)
-      return 0
-    })
+    // .sort((a, b) => {
+    //   if (sortBy === "newest") return b.id - a.id
+    //   if (sortBy === "oldest") return a.id - b.id
+    //   if (sortBy === "featured") return (b.featured ? 1 : 0) - (a.featured ? 1 : 0)
+    //   return 0
+    // })
 
   const featuredProjects = filteredProjects.filter(project => project.featured)
   const regularProjects = filteredProjects.filter(project => !project.featured)

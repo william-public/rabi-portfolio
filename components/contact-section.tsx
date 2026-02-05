@@ -20,8 +20,8 @@ export function ContactSection() {
     {
       icon: <Phone className="h-6 w-6" />,
       title: "Phone",
-      value: "+1 (647) 917-7225",
-      link: "tel:+16479177225",
+      value: "+1 (646) 481-2283",
+      link: "tel:+16464812283",
     },
     {
       icon: <MapPin className="h-6 w-6" />,
